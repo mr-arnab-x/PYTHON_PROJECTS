@@ -3,6 +3,8 @@ import qrcode  # Import the qrcode library to generate QR codes
 # Prompt the user to enter their UPI ID
 upi_id = input("Enter Your UPI ID Here - ")
 
+#   upi://pay?pa=UPI_ID&pn=NAME&am=AMOUNT&cu=CURRENCY&tn=MASSAGE
+
 # Create the UPI payment URL for PhonePe with a merchant code (mc)
 phonepe_url = f"upi://pay?pa={upi_id}&pn=Recipient%20Name&mc=1234"
 
